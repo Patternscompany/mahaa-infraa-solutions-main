@@ -19,9 +19,9 @@
 
         <!-- Libraries Stylesheet -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
           
@@ -38,7 +38,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    </head>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+<head>
 
     <body>
 
@@ -182,6 +189,31 @@ height: 300px;
 padding: 0.5rem;
 border-radius: 20px;
     }
+    .award-carousel.owl-carousel .owl-nav{
+/* position: relative; */
+    }
+    .award-carousel.owl-carousel .owl-nav .owl-prev, .award-carousel.owl-carousel .owl-nav .owl-next{
+position:absolute;
+top: 50%;
+background-color: #000000;
+padding: 0.5rem 0.5rem;
+color: white;
+    }
+    .award-carousel.owl-carousel .owl-nav .owl-prev{
+left: 8px;
+
+    }
+    .award-carousel.owl-carousel .owl-nav .owl-next{
+right: 8px;
+
+    }
+    .award-carousel.owl-carousel .owl-nav .owl-prev span, .award-carousel.owl-carousel .owl-nav .owl-next span{
+font-size: 40px;
+    }
+    .award-carousel.owl-carousel .owl-nav .owl-prev span{
+margin-right: 10px;
+    }
+
    /* General Styling */
 h2 {
     text-align: center;
@@ -225,6 +257,9 @@ h2 {
     .image-scroll{
         flex-wrap: wrap;
     }
+    .award-carousel.owl-carousel img{
+        height: 100%;
+    }
 }
 
 /* Media Queries for Mobile */
@@ -259,33 +294,33 @@ h2 {
 </style>
 
 <!-- Image and Text Section -->
-<section id="image-text">
+<section class=" awards-carousel owl-carousel pt-3">
     <div class="image-text-item">
-        <img src="img/awards/WhatsApp Image 2024-11-06 at 11.40.03 AM (1).jpeg" alt="Image 1">
+        <img src="img/awards/award1.jpeg" alt="Image 1">
         <p>Highly Recommended Turnkey Architects in Hyderabad - India Design Awards 2023 felicitated by blindwink(R)</p>
     </div>
     <div class="image-text-item">
-        <img src="img/awards/WhatsApp Image 2024-12-04 at 15.05.39_0f8c0318.jpg" alt="Image 5">
+        <img src="img/awards/Indian-Icon-Awards-felicitated-by-Global-Excellence-Forum.jpg" alt="Image 5">
         <p>Most Vibrant Young Professional Designer of the Year 2023 - Indian Icon Awards felicitated by Global Excellence Forum</p>
     </div>
     <div class="image-text-item">
-        <img src="img/awards/WhatsApp Image 2024-11-06 at 11.40.05 AM (1).jpeg" alt="Image 4">
+        <img src="img/awards/Hyderabad-Excellence-Awards-2024.jpeg" alt="Image 4">
         <p>Emerging Architect & Interior Designer of the year - Hyderabad Excellence Awards 2024 felicitated by SwiftNLift Media & Tech LLP</p>
     </div>
     <div class="image-text-item">
-        <img src="img/awards/WhatsApp Image 2024-11-06 at 11.40.05 AM.jpeg" alt="Image 3">
+        <img src="img/awards/Telangana-awarded-by-Global-Architects.jpeg" alt="Image 3">
         <p>Most Innovative Architect of 2024 - Telangana awarded by Global Architects & Builder Awards</p>
     </div>
     <div class="image-text-item">+
-        <img src="img/awards/WhatsApp Image 2024-11-06 at 11.40.06 AM.jpeg" alt="Image 2">
+        <img src="img/awards/Tally-MSME-Honors-2024.jpeg" alt="Image 2">
         <p>Tech Transformer Award for 2024 felicitated by Tally MSME Honors 2024 Awards</p>
     </div>
     <div class="image-text-item">+
-        <img src="img/mahaaa/1 (19).png" alt="Image 2">
+        <img src="img/mahaaa/Business-mint.png" alt="Image 2">
         <p>Outstanding Interior Design & Construction Company of the year - 2024, Hyderabad, @ Nation wide Awards presented by Business mint.</p>
     </div>
     <div class="image-text-item">+
-        <img src="img/awards/awa.jpg" alt="Image 2">
+        <img src="img/awards/indian-icon-awards.jpg" alt="Image 2">
         <p>Indian Icon Architecture / Interior Design of the Year - Residential felicitated by Indian Icon Awards.</p>
     </div>
    
@@ -302,25 +337,25 @@ h2 {
 /* Image and Text Section */
 #image-text {
     padding: 50px 0;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 
 .image-text-item {
-    display: none;
+    /* display: none; */
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-radius: 30px;
 }
 
 .image-text-item img {
-    width: 400px;
+    width: 400px !important;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
-    
+    margin: 0 auto;
     
 }
 
@@ -333,11 +368,27 @@ h2 {
 .image-text-item.active {
     display: block;
 }
+.awards-carousel.owl-carousel .owl-dots{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.awards-carousel.owl-carousel .owl-dots .owl-dot{
+width: 15px;
+height: 15px;
+border-radius: 50%;
+margin: 0 5px;
+background: #d6d6d6;
+}
+.awards-carousel.owl-carousel .owl-dots .owl-dot.active{
+background: #DEBB3B;
+}
+
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
     .image-scroll img {
-        width: 150px;
+        width: 100%;
         height: 150px;
     }
 }
@@ -345,21 +396,21 @@ h2 {
 </style>
 
 <script>
-   let currentIndex = 0;
-const items = document.querySelectorAll('.image-text-item');
+//    let currentIndex = 0;
+// const items = document.querySelectorAll('.image-text-item');
 
-function showNextImage() {
-    items.forEach((item, index) => {
-        item.classList.remove('active');
-        if (index === currentIndex) {
-            item.classList.add('active');
-        }
-    });
-    currentIndex = (currentIndex + 1) % items.length;
-}
+// function showNextImage() {
+//     items.forEach((item, index) => {
+//         item.classList.remove('active');
+//         if (index === currentIndex) {
+//             item.classList.add('active');
+//         }
+//     });
+//     currentIndex = (currentIndex + 1) % items.length;
+// }
 
 // Show next image every 3 seconds
-setInterval(showNextImage, 3000);
+// setInterval(showNextImage, 3000);
 
 
 </script>
@@ -915,13 +966,9 @@ p {
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-    
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
 <script>
     new WOW().init();
 </script>
