@@ -510,6 +510,15 @@
     background-size: cover;
     padding: 60px 0 60px 0;
 }
+.bg-breadcrumb-terms {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/terms-conditions.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 60px 0;
+}
 
 
 
